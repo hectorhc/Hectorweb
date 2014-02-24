@@ -1,0 +1,191 @@
+a
+{
+	color: #22BCE0
+}
+aside
+{
+	display: none;
+}
+body 
+{
+	background: #EEEEEE;
+	font-size: 16px;
+	font-family: Arial;
+
+}
+header
+{
+	background: #344b54;
+	color: white;
+	overflow: hidden;
+	padding: 0.5em;
+	position: relative;
+}
+header figure
+{
+	float: left;
+}
+header #avatar
+{
+	margin: 0.5em 0.5em 0 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+}
+header #avatar img
+{
+	border-radius: 25px;
+ width: 55px;
+}
+header h1
+{
+	font-size: 1.2em;
+	font-weight: normal;
+	margin: 0 70px 0 0;
+}
+header #logo
+{
+	border-right: 2px solid white;
+	margin-right: 0.5em;
+    padding-right: 0.5em;
+    width: 52px;
+}
+header #logo img 
+{
+	
+	margin-right: 0.5em;
+	padding-right: 0.5em;
+	width: 52px;
+}
+nav 
+{
+	background: #80BCA3;
+	position: relative;
+}
+nav ul 
+{
+	list-style: none;
+	margin: 0;
+	padding: 0 5em 0 0.5em;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 0 0.5em 0 0;
+	
+} 
+nav ul li a
+{
+	color: white;
+	display: block;
+	padding: 0.5em;
+	text-decoration: none;
+	text-shadow:rgba(0,0,0,0.5) 5px 5px 20px;
+	
+}
+nav ul #login 
+{
+    position: absolute;
+	right: 0;
+	top: -0.1em;
+
+}
+nav ul #login a
+{
+	background: #22BCE0;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+    font-style: italic;
+    padding: 0.6em 0.8em;
+    text-shadow:rgba(0,0,0,0.5) 5px 5px 20px;
+
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .art
+{
+	background: #FFFFFF;
+	border-radius: 8px 8px 0px 0px;
+	position: relative;
+	margin-bottom: 1em;
+	border-bottom: 3px solid #22BCE0;
+
+}
+#contenido .art .imagen-art
+{
+	background-color: white;
+	border-radius: 8px 8px 0px 0px;
+}
+#contenido .art .imagen-art img 
+{
+	border-radius: 8px 8px 0px 0px;
+	display: block;
+	width: 100%;
+}
+#contenido .art .imagen-art .cinta-art
+{
+	color: white;
+	position: absolute;
+	right: 0;
+	top: 0.1em;
+}
+#contenido .art .imagen-art .cinta-art p
+
+{
+	font-size: 0.6em;
+	background: #22BCE0;
+	border-radius: 3px 0px 0px 3px;
+	padding: 0.1em 0.2em;
+	font-style: italic;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	text-shadow:rgba(0,0,0,0.5) 5px 5px 20px;
+
+}
+footer
+{
+	background: #22BCE0;
+	color: rgba( 255 , 255 , 255 , 0 . 7 );
+	padding: 1em ;
+	text-align: center;
+}
+footer p : first-child
+{
+	margin-bottom :  0 ;
+}
+footer  p : last-child
+{
+	margin-top :  0 ;
+}
+
+/*responsive*/
+
+@media screen and (min-width: 800px){
+	#contenido
+	{
+		overflow: hidden;
+	}
+	#contenido .art
+	{
+		width: 49%;
+		float: left;
+	}
+	#contenido .art:nth-child(odd){
+		margin-right: 2%;
+	}
+}
+@media screen and (min-width: 1080px){
+	aside
+	{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 25%;
+	}
+	aside video
+	{
+		width: 100%;
+	}
+}
